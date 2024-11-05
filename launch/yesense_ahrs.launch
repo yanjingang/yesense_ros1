@@ -13,7 +13,7 @@
   </node>
   
   <include file="$(find yesense_imu)/launch/tf.launch" if="$(arg is_visual)"/>
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find yesense_imu)/rviz/yesense.rviz" required="true"/>
+  <node pkg="rviz" type="rviz" name="rviz_yesense" args="-d $(find yesense_imu)/rviz/yesense.rviz" required="true"/>
   
 
 </launch>
